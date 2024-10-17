@@ -1,0 +1,80 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Layout principal */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Main e Aside alinhados horizontalmente */
+main {
+    display: flex;
+    flex: 1;
+    padding: 2rem;
+}
+
+/* Seção principal (posts) */
+#post-container {
+    flex: 3;
+    margin-right: 2rem;
+}
+
+#posts {
+    margin-top: 1rem;
+}
+
+/* Barra lateral (calendário) */
+aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-left: 1px solid #ddd;
+}
+
+/* Estilo do calendário */
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 1rem;
+}
+
+#calendar div {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* Destaque de dias com postagem */
+.post-day {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Container para exibir títulos das postagens */
+#daily-posts {
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
